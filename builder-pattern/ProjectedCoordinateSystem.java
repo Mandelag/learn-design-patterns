@@ -24,6 +24,7 @@ public class ProjectedCoordinateSystem
     private double falseEasting;
     private double falseNorthing;
     private double height;
+    private String geographicCoordinateSystem;
     
     /**
      * Constructor for objects of class ProjectedCoordinateSystem.
@@ -34,8 +35,8 @@ public class ProjectedCoordinateSystem
      */
     public ProjectedCoordinateSystem(String name, int code, String authorityName, String authorityCode,
         double azimuth, double centralLongitude, double centralMeridian, double centralParallel,
-        String coordinateUnit, double[] domain, int factoryCode, double falseEasting,
-        double falseNorthing, double height)
+        String coordinateUnit, double[] domain, double falseEasting,
+        double falseNorthing, double height, String geographicCoordinateSystem)
     {
         super();
         this.name = name;
@@ -48,10 +49,10 @@ public class ProjectedCoordinateSystem
         this.centralParallel = centralParallel;
         this.coordinateUnit = coordinateUnit;
         this.domain = domain;
-        this.factoryCode = factoryCode;
         this.falseEasting = falseEasting;
         this.falseNorthing = falseNorthing;
         this.height = height;
+        this.geographicCoordinateSystem = geographicCoordinateSystem;
     }
 
     public String toString()
