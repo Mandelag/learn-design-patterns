@@ -1,4 +1,4 @@
-
+package com.mandelag.patterns.builder;
 
 import static org.junit.Assert.*;
 import org.junit.After;

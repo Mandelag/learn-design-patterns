@@ -1,6 +1,7 @@
+package com.mandelag.patterns.builder; 
 
 /**
- * Implementing Builder Pattern to create projected coordinate system.
+ * Implementing Builder Pattern     to create projected coordinate system.
  * Reason using this pattern:
  *   - Projected coordinate system have many parameter that would be 
  *   crowded if only set in constructor
